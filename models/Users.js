@@ -14,6 +14,26 @@ const PostSchema = mongoose.Schema({
 		type: String,
 		required: true,
 	},
+	phone: {
+		type: String,
+	},
+	adress: {
+		type: String,
+	},
+	gender: {
+		type: String,
+	},
+	socials: {
+		facebook: {
+			type: String,
+		},
+		linkedIn: {
+			type: String,
+		},
+		twitter: {
+			type: String,
+		},
+	},
 });
 
 module.exports = mongoose.model("Users", PostSchema);
