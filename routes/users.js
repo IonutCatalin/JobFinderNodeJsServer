@@ -32,6 +32,10 @@ router.post("/", (req, res) => {
 			username,
 			email,
 			password,
+			profilePicture,
+			phone,
+			adress,
+			gender,
 		});
 
 		// Create salt & password hash
@@ -53,6 +57,10 @@ router.post("/", (req, res) => {
 									id: user.id,
 									username: user.username,
 									email: user.email,
+									profilePicture: user.profilePicture,
+									phone: user.phone,
+									adress: user.adress,
+									gender: user.gender,
 								},
 							});
 						}
@@ -95,6 +103,9 @@ router.patch("/:userId", async (req, res) => {
 					email: req.body.email,
 					password: req.body.password,
 					phone: req.body.phone,
+					profilePicture: req.body.profilePicture,
+					adress: req.body.adress,
+					gender: req.body.gender,
 				},
 			}
 		);

@@ -21,22 +21,28 @@ const PostSchema = mongoose.Schema({
 	},
 	phone: {
 		type: String,
+		default: "",
 	},
 	adress: {
 		type: String,
+		default: "",
 	},
 	gender: {
 		type: String,
+		default: "",
 	},
 	socials: {
 		facebook: {
 			type: String,
+			default: "",
 		},
 		linkedIn: {
 			type: String,
+			default: "",
 		},
 		twitter: {
 			type: String,
+			default: "",
 		},
 	},
 });
