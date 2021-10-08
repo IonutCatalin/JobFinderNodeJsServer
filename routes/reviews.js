@@ -20,6 +20,7 @@ router.post("/", async (req, res) => {
 		email: req.body.email,
 		rating: req.body.rating,
 		message: req.body.message,
+		jobId: req.body.jobId,
 	});
 
 	try {
