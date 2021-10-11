@@ -31,19 +31,19 @@ const PostSchema = mongoose.Schema({
 		type: String,
 		default: "",
 	},
-	socials: {
-		facebook: {
-			type: String,
-			default: "",
-		},
-		linkedIn: {
-			type: String,
-			default: "",
-		},
-		twitter: {
-			type: String,
-			default: "",
-		},
+	savedJobs: [{}],
+
+	facebook: {
+		type: String,
+		default: "",
+	},
+	linkedIn: {
+		type: String,
+		default: "",
+	},
+	twitter: {
+		type: String,
+		default: "",
 	},
 });
 
