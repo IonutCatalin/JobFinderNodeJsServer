@@ -8,6 +8,7 @@ const jobsRoute = require("./routes/jobs");
 const usersRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
 const reviewRoute = require("./routes/reviews");
+const savedJobsRoute = require("./routes/savedJobs");
 dotenv.config();
 
 // CONNECT TO DB
@@ -29,6 +30,7 @@ app.use("/jobs", jobsRoute);
 app.use("/users", usersRoute);
 app.use("/auth", authRoute);
 app.use("/reviews", reviewRoute);
+app.use("/savedJobs", savedJobsRoute);
 
 // app.get("/", (req, res) => {
 // 	res.send("We are on home");
