@@ -25,6 +25,7 @@ router.post("/", async (req, res) => {
 		requirements: req.body.requirements,
 		companyOffers: req.body.companyOffers,
 		userId: req.body.userId,
+		savedJobId: req.body.savedJobId,
 	});
 
 	try {
@@ -73,6 +74,7 @@ router.patch("/:savedJobId", async (req, res) => {
 					description: req.body.description,
 					requirements: req.body.requirements,
 					companyOffers: req.body.companyOffers,
+					savedJobId: req.body.savedJobId,
 				},
 			}
 		);

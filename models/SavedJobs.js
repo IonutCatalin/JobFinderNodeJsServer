@@ -37,6 +37,10 @@ const PostSchema = mongoose.Schema({
 		type: String,
 		required: true,
 	},
+	savedJobId: {
+		type: String,
+		required: true,
+	},
 });
 
 module.exports = mongoose.model("SavedJobs", PostSchema);
