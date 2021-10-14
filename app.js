@@ -9,6 +9,7 @@ const usersRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
 const reviewRoute = require("./routes/reviews");
 const savedJobsRoute = require("./routes/savedJobs");
+const myResumesRoute = require("./routes/myresumes");
 dotenv.config();
 
 // CONNECT TO DB
@@ -31,6 +32,7 @@ app.use("/users", usersRoute);
 app.use("/auth", authRoute);
 app.use("/reviews", reviewRoute);
 app.use("/savedJobs", savedJobsRoute);
+app.use("/myResumes", myResumesRoute);
 
 // app.get("/", (req, res) => {
 // 	res.send("We are on home");
